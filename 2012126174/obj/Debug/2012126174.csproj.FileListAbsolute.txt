@@ -1,0 +1,6 @@
+D:\Escritorio\2012126174\2012126174\bin\Debug\2012126174.exe.config
+D:\Escritorio\2012126174\2012126174\bin\Debug\2012126174.exe
+D:\Escritorio\2012126174\2012126174\bin\Debug\2012126174.pdb
+D:\Escritorio\2012126174\2012126174\obj\Debug\2012126174.csprojResolveAssemblyReference.cache
+D:\Escritorio\2012126174\2012126174\obj\Debug\2012126174.exe
+D:\Escritorio\2012126174\2012126174\obj\Debug\2012126174.pdb
