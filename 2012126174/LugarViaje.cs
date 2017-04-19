@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace _2012126174
 {
-    public class LugarViaje
+    class LugarViaje
     {
-        private TipoLugar _tipoLugar;
+        public TipoLugar TipoLugar { get; set; }
+        public String NombreLugar { get; set; }
 
-
-
+        public LugarViaje(int i)
+        {
+            TipoLugar = new TipoLugar(i);
+            NombreLugar = String.Empty;
+        }
     }
 }

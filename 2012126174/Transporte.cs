@@ -6,43 +6,25 @@ using System.Threading.Tasks;
 
 namespace _2012126174
 {
-    public class Transporte : Servicio
+     class Transporte : Servicio
     {
-        public Cliente _cliente;
-        public TipoViaje _tipoViaje;
-        public LugarViaje _lugarviaje;
+        public LugarViaje Origen { get; set; }
+        public LugarViaje Destino { get; set; }
+        public TipoViaje TipoViaje { get; set; }
+        public Cliente Cliente { get; set; }
+        public Bus Bus { get; set; }
 
-        private List<Bus> _Buses;
-
-        public List<Bus> Buses
+        public Transporte(int tipoviaje, int pasajeros, Tripulacion tripulacion)
         {
-            get
-            {
-                return _Buses;
-            }
-
-            set
-            {
-                _Buses = value;
-            }
+            TipoViaje = new TipoViaje(tipoviaje);
+            Cliente = new Cliente();
+            Bus = new Bus(pasajeros);
+            this.NombreServicio = "Servicio de Transporte";
         }
-
-        public Transporte(List<Bus> buses)
-        {
-            Buses = buses;
-        }
-         
-       
-
-
-
-
-
-
-
-        }
-
+  
 
 
     }
+
+}
 

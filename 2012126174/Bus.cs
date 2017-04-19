@@ -8,45 +8,14 @@ namespace _2012126174
 {
    public class Bus
     {
-        private List<Tripulacion> _Tripulaciones;
+        public String Placa { get; set; }
+        public Tripulacion Tripulacion { get; set; }
 
-
-
-        public List<Tripulacion> Tripulaciones
+        public Bus(int pasajeros)
         {
-            get
-            {
-                return _Tripulaciones;
-            }
-            set
-            {
-                _Tripulaciones = value;
-            }
+            Placa = String.Empty;
         }
 
-        public Bus(List<Tripulacion> tripulaciones)
-        {
-            Tripulaciones = tripulaciones;
-        }
-
-        public String bus(string tipoViaje)
-        {
-            if (tipoViaje == "VIP"){
-                return "Bus Cama";
-            }
-            else
-            {
-                return "Bus Normal";
-            }
-        }
-
-
-
-
-
-
-
-
-        }
+    }
     }
 

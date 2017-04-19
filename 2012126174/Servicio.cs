@@ -8,7 +8,7 @@ namespace _2012126174
 {
     public abstract class Servicio
     {
-
-
+        public String NombreServicio { get; set; }
+        public Decimal Tarifa { get; set; }
     }
 }

@@ -6,33 +6,22 @@ using System.Threading.Tasks;
 
 namespace _2012126174
 {
-   public class Encomienda : Servicio
+    class Encomienda : Servicio
     {
-        private LugarViaje _lugarviaje;
-
-
-
-        public int EncomiendaID { get; private set;}
+        public LugarViaje Origen { get; set; }
+        public LugarViaje Destino { get; set; }
+        public double Peso { get; set; }
+        public String Destinatario { get; set; }
         public Bus Bus { get; set; }
+
 
         public Encomienda()
         {
-
+            Destinatario = String.Empty;
+            NombreServicio = String.Empty;
+            this.NombreServicio = "Servicio de Encomienda";
         }
-
-        public Encomienda (Bus bus)
-        {
-            Bus = bus;
-        }
-
-        public Encomienda (int encomiendaID)
-        {
-            EncomiendaID = EncomiendaID;
-        }
-
-
-
-
+       
 
     }
 }
